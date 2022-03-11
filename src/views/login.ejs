@@ -9,6 +9,8 @@
           <h1 class=" text-center">Criar conta ou Entrar</h1>
           <p class="text-center lead">Faça login ou crie sua conta abaixo</p>
 
+          <%- include('includes/messages') %> 
+          
           <div class="row">
             <div class="col-lg">
               <h4>Faça seu cadastro</h4>
@@ -20,14 +22,12 @@
 
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Seu Email</label>
-                  <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
+                  <input type="email" name="email" class="form-control">
                 </div>
 
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Sua Senha</label>
-                  <input type="password" name="password" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
+                  <input type="password" name="password" class="form-control">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Criar minha conta</button>
@@ -44,14 +44,12 @@
                 <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Seu Email</label>
-                  <input type="email" name="email" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
+                  <input type="email" name="email" class="form-control">
                 </div>
 
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Sua Senha</label>
-                  <input type="password" name="password" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
+                  <input type="password" name="password" class="form-control">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Entrar</button>
